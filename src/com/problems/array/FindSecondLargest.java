@@ -44,7 +44,7 @@ public class FindSecondLargest {
 	
 	public static void main(String[] args) {
 		FindSecondLargest fs = new FindSecondLargest();
-		int[] arr = {2, 4, 2, 5, 15, 4, 7, 8, 25, 5};
+		int[] arr = {20, 4, 2, 5, 15, 4, 7, 8, 25, 5};
 		System.out.println("Second Largest element = "+fs.findSecondLargestElement(arr));
 		System.out.println("Second Highest Element = "+fs.findSeconHighest(arr));
 	}
