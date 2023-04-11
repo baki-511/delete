@@ -29,8 +29,8 @@ public class BinaryToDecimal {
         return sum;
     }
     public static void main(String[] args) {
-        String bin = "10001010";
-        long num = 10001010;
+        String bin = "101110011011";
+        long num = 101110011011L;
         System.out.println("Binary num = "+bin+"\nDecimal Num = "+convertToDec(bin));
         System.out.println("\nBinary num = "+bin+"\nDecimal Num = "+binaryToDec(num));
     }
