@@ -13,8 +13,25 @@ public class BinaryToDecimal {
         }
         return sum;
     }
+
+    public static int binaryToDec(long bin) {
+        long temp = bin;
+        int sum = 0;
+        int count = 0;
+        while (temp > 0) {
+            int d = (int) (temp % 10);
+            if (d == 1) {
+                sum = (int) (sum + Math.pow(2, count));
+            }
+            temp = temp / 10;
+            count++;
+        }
+        return sum;
+    }
     public static void main(String[] args) {
         String bin = "10001010";
+        long num = 10001010;
         System.out.println("Binary num = "+bin+"\nDecimal Num = "+convertToDec(bin));
+        System.out.println("\nBinary num = "+bin+"\nDecimal Num = "+binaryToDec(num));
     }
 }
